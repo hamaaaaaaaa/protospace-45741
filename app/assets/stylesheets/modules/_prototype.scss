@@ -1,0 +1,44 @@
+.card__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.card__body {
+  padding: 16px;
+}
+
+.card__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+}
+
+.card__catchcopy {
+  font-size: 14px;
+  color: #666;
+  margin: 8px 0;
+}
+
+.card__user {
+  font-size: 13px;
+  color: #007BFF;
+  text-decoration: none;
+}
