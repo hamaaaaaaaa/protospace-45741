@@ -56,6 +56,9 @@ a {
   width: 200px;
 }
 
+.nav__right{
+  display: flex;
+}
 .nav__btn {
   display: inline-block;
   padding: 0.4em 1.6em;
@@ -73,14 +76,27 @@ a {
   background: #87CEFA;
 }
 
-.nav__logout {
+button.nav__logout {
+  all: unset;              /* ボタンの初期スタイルをすべて消す */
+
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
   color: #87CEFA;
   text-decoration: none;
   user-select: none;
+  cursor: pointer;
+
+  /* aタグと同じようにするため */
+  appearance: none;
+  line-height: normal;
 }
+
+/* hover 表現も欲しければ */
+button.nav__logout:hover {
+  opacity: 0.8;
+}
+
 
 .nav__logout:hover {
   opacity: 0.5;

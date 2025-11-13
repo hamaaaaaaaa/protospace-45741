@@ -7,6 +7,12 @@ class Prototype < ApplicationRecord
   validates :title, presence: true
   validates :catch_copy, presence: true
   validates :concept, presence: true
-  # 画像は添付されていればOK、なくても登録可能
-  # validates :image, presence: true
+  # 画像必須
+  validate :image_presence
+
+  private
+
+  def image_presence
+    errors.add(:image, "を選択してください") unless image.attached?
+  end
 end
