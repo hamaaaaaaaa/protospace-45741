@@ -35,31 +35,26 @@ a {
 }
 
 /* ヘッダー */
+
 .header {
   background-color: #f1f8fe;
   margin-bottom: 48px;
   padding: 20px 0;
-}
 
+}
 .inner {
   width: 1024px;
   margin: 0 auto;
 }
-
 .nav {
   width: 100%;
   display: flex;
   justify-content: space-between;
 }
-
 .logo {
   width: 200px;
 }
-
-.nav__right{
-  display: flex;
-}
-.nav__btn {
+.nav__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
@@ -70,40 +65,25 @@ a {
   border-radius: 3px;
   transition: 0.4s ease;
 }
-
-.nav__btn:hover {
+.nav__btn:hover{
   color: #fff;
   background: #87CEFA;
 }
 
-button.nav__logout {
-  all: unset;              /* ボタンの初期スタイルをすべて消す */
-
+.nav__logout{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
   color: #87CEFA;
   text-decoration: none;
   user-select: none;
-  cursor: pointer;
-
-  /* aタグと同じようにするため */
-  appearance: none;
-  line-height: normal;
 }
-
-/* hover 表現も欲しければ */
-button.nav__logout:hover {
-  opacity: 0.8;
-}
-
-
-.nav__logout:hover {
+.nav__logout:hover{
   opacity: 0.5;
 }
 
-/* フォーム関連 */
-.form__wrapper {
+/* フォーム周り */
+.form__wrapper{
   min-height: calc(100vh - 161px);
 }
 
@@ -111,15 +91,15 @@ button.nav__logout:hover {
   width: 50%;
 }
 
-.field {
+.field{
   margin: 10px 0;
 }
 
-.actions {
+.actions{
   margin-bottom: 40px;
 }
 
-.form__btn {
+.form__btn{
   display: inline-block;
   padding: 0.4em 1.6em;
   font-size: 0.8em;
@@ -129,31 +109,27 @@ button.nav__logout:hover {
   background: #87CEFA;
   border: 1px #87CEFA solid;
   border-radius: 3px;
-  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14),
-              0 1px 2px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.14), 0 1px 2px 0 rgba(0, 0, 0, 0.12);
   transition: 0.2s ease;
 }
 
 .form__btn:hover {
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2),
-              0 1px 8px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2), 0 1px 8px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
 }
 
-/* メインページ */
-.greeting {
+/* メイン */
+
+.greeting{
   margin-bottom: 20px;
 }
-
-.greeting__link {
+.greeting__link{
   text-decoration: underline;
 }
-
 .page-heading {
   font-size: 30px;
   margin-bottom: 28px;
 }
-
 .card__wrapper {
   display: flex;
   flex-wrap: wrap;
@@ -161,27 +137,22 @@ button.nav__logout:hover {
   align-items: center;
   min-height: calc(100vh - 161px);
 }
-
 .card {
   width: calc((100% - 50px) / 3);
   margin-bottom: 40px;
 }
-
 .card__img {
   margin-bottom: 16px;
 }
-
 .card__title {
   display: block;
   font-size: 20px;
   margin-bottom: 8px;
   font-weight: bold;
 }
-
 .card__summary {
   font-size: 16px;
 }
-
 .card__user {
   display: block;
   font-size: 12px;
@@ -191,49 +162,42 @@ button.nav__logout:hover {
 }
 
 /* 詳細ページ */
-.prototype__wrapper {
+.prototype__wrapper{
   min-height: calc(100vh - 161px);
 }
-
-.prototype__hedding {
+.prototype__hedding{
   font-size: 24px;
   font-weight: bold;
   text-align: center;
 }
-
-.prototype__user {
+.prototype__user{
   display: block;
   font-size: 16px;
   color: #999;
   text-align: center;
   text-decoration: underline;
 }
-
-.prototype__image {
+.prototype__image{
   width: 40%;
   margin: 0 auto;
   padding: 16px 0;
 }
-
-.prototype__detail {
+.prototype__detail{
   display: flex;
   align-items: center;
   flex-direction: column;
   margin-bottom: 8px;
 }
-
-.detail__title {
+.detail__title{
   font-size: 20px;
   font-weight: bold;
 }
-
-.prototype__manage {
+.prototype__manage{
   display: flex;
   justify-content: center;
   padding-top: 16px;
 }
-
-.prototype__btn {
+.prototype__btn{
   display: block;
   padding: 0.4em 1.6em;
   font-size: 0.4em;
@@ -245,45 +209,42 @@ button.nav__logout:hover {
   transition: 0.4s ease;
   margin: 0 4px;
 }
-
-.prototype__btn:hover {
+.prototype__btn:hover{
   color: #fff;
   background: #999;
 }
 
-.prototype__comments {
+.prototype__comments{
   background-color: #f6f6f6;
   padding: 20px;
   margin: 28px 0 40px 0;
 }
 
-.comments_lists {
+.comments_lists{
   padding-left: 20px;
 }
 
-.comments_list {
+.comments_list{
   list-style-type: square;
   padding-bottom: 5px;
 }
 
-.comment_user {
+.comment_user{
   font-size: 16px;
   color: #999;
   text-decoration: underline;
 }
 
 /* ユーザーページ */
-.user__wrapper {
+.user__wrapper{
   min-height: calc(100vh - 161px);
 }
-
-.table {
+.table{
   border-collapse: collapse;
   margin-bottom: 32px;
   width: 50%;
 }
-
-.table__col1 {
+.table__col1{
   text-align: left;
   font-weight: bold;
   background: #fafafa;
@@ -292,28 +253,25 @@ button.nav__logout:hover {
   width: 30%;
   padding: 8px;
 }
-
-.table__col2 {
+.table__col2{
   text-align: left;
   border: 1px solid #f5f5f5;
   border-collapse: collapse;
   width: 70%;
   padding: 16px 8px;
 }
-
 .user__card {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 }
-
 /* フッター */
+
 .footer {
   background-color: #999;
   padding: 10px 0;
 }
-
 .copyright {
   text-align: center;
   color: #fff;
@@ -326,49 +284,40 @@ button.nav__logout:hover {
     width: 90%;
     margin: 0 auto;
   }
-
   .page-heading {
     font-size: 24px;
   }
-
   .card {
     width: 48%;
     margin-bottom: 40px;
   }
-
-  .prototype_image {
+  .prototype_image{
     width: 60%;
   }
 }
 
-/* スマホ対応 */
+ /* スマホ表示 */
 @media (max-width: 599px) {
   .logo {
     width: 120px;
   }
-
   .page-heading {
     font-size: 20px;
   }
-
   .card {
     width: 100%;
     margin-bottom: 60px;
   }
-
   .card__title {
     font-size: 18px;
   }
-
   .card__summary {
     font-size: 14px;
   }
-
-  .prototype_image {
+  .prototype_image{
     width: 100%;
   }
-
-  .table {
+  .table{
     width: 100%;
   }
 }

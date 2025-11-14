@@ -4,10 +4,8 @@ class CommentsController < ApplicationController
     @comment = @prototype.comments.new(comment_params)
 
     if @comment.save
-      # 保存に成功した場合は詳細ページにリダイレクト
       redirect_to prototype_path(@prototype)
     else
-      # 保存に失敗した場合は詳細ページに戻す
       @comments = @prototype.comments
       render "prototypes/show", status: :unprocessable_entity
     end
@@ -18,6 +16,9 @@ class CommentsController < ApplicationController
   def comment_params
     params.require(:comment)
           .permit(:content)
-          .merge(user_id: current_user.id)
+          .merge(
+            user_id: current_user.id,
+            prototype_id: params[:prototype_id]
+          )
   end
 end
