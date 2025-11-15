@@ -12,10 +12,7 @@
       <% if user_signed_in? && current_user.id == @prototype.user.id %>
         <div class="prototype__manage">
           <%= link_to "編集する", edit_prototype_path(@prototype), class: :prototype__btn %>
-          <%= button_to "削除する", prototype_path(@prototype),
-            method: :delete,
-            data: { turbo: false, confirm: "本当に削除しますか？" },
-            class: :prototype__btn %>
+          <%= link_to '削除する', prototype_path(@prototype),class: :prototype__btn, data: { turbo_method: :delete } %>
         </div>
       <% end %>
 
